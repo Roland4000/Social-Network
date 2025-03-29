@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.socialnetworkjavafx.UIs.Controllers.LoggedInController"
+            prefWidth="600" prefHeight="400">
+
+    <Label fx:id="welcomeMessage"
+           layoutX="20" layoutY="20"
+           style="-fx-font-size: 18px; -fx-font-weight: bold;"
+    />
+
+    <Label text="Your Friends:"
+           layoutX="20" layoutY="60"
+           style="-fx-font-size: 14px;" />
+    <ListView fx:id="friendsListView"
+              layoutX="20" layoutY="80"
+              prefHeight="100" prefWidth="200" />
+
+    <Label text="Friend Requests:"
+           layoutX="240" layoutY="60"
+           style="-fx-font-size: 14px;" />
+    <ListView fx:id="friendRequestsListView"
+              layoutX="240" layoutY="80"
+              prefHeight="100" prefWidth="200" />
+
+    <Label text="Sent Requests:"
+           layoutX="460" layoutY="60"
+           style="-fx-font-size: 14px;" />
+
+    <ListView fx:id="sentRequestsListView"
+              layoutX="460" layoutY="80"
+              prefHeight="100" prefWidth="200" />
+
+    <Button text="Next"
+            prefWidth="50"
+            layoutX="20" layoutY="200"
+            onAction="#onNextPage" />
+
+    <Button text="Prev"
+            prefWidth="50"
+            layoutX="170" layoutY="200"
+            onAction="#onPrevPage" />
+
+    <Button text="Add Friend"
+            layoutX="20" layoutY="250"
+            prefWidth="150"
+            onAction="#onAddFriend" />
+
+    <Button text="Remove Friend"
+            layoutX="200" layoutY="250"
+            prefWidth="150"
+            onAction="#onRemoveFriend" />
+    <Button text="Accept Request"
+            layoutX="20" layoutY="300"
+            prefWidth="150"
+            onAction="#onAcceptRequest" />
+    <Button text="Decline Request"
+            layoutX="200" layoutY="300"
+            prefWidth="150"
+            onAction="#onDeclineRequest" />
+    <Button text="Send Message"
+            layoutX="20" layoutY="350"
+            prefWidth="150"
+            onAction="#onSendMessage" />
+    <Button text="Log Out"
+            layoutX="200" layoutY="350"
+            prefWidth="150"
+            onAction="#onLogOut" />
+    <Button text="View Profile"
+            layoutX="400"
+            layoutY="300"
+            onAction="#handleViewProfile"/>
+
+</AnchorPane>
+

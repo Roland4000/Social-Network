@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.socialnetworkjavafx.UIs.Controllers.LandingController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <Label text="Welcome to The Social Network"
+           layoutX="200" layoutY="50"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+    <Label text="Username:" layoutX="150" layoutY="120" />
+    <TextField fx:id="usernameField" layoutX="250" layoutY="120" />
+
+    <Label text="Password:" layoutX="150" layoutY="160" />
+    <PasswordField fx:id="passwordField" layoutX="250" layoutY="160" />
+
+    <Button text="Log In" layoutX="250" layoutY="200"
+            onAction="#onLogin" />
+
+    <Label text="New here? Register below:" layoutX="150" layoutY="260" />
+
+    <Button text="Register" layoutX="250" layoutY="300"
+            onAction="#onRegister" />
+
+    <Button text="View All Users" layoutX="200" layoutY="360" onAction="#onViewAllUsers"/>
+
+    <Button text="View All Friendships" layoutX="340" layoutY="360" onAction="#onViewAllFriendships"/>
+
+    <Label fx:id="messageLabel" layoutX="150" layoutY="350"
+           style="-fx-text-fill: red; -fx-font-size: 14px;" />
+
+
+
+</AnchorPane>
+
+
+
+
